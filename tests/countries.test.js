@@ -17,6 +17,7 @@ describe('backend-express-template routes', () => {
       { id: '3', country: 'India', capitol: 'New Dehli', langue: 'Hindi' },
       { id: '4', country: 'Romania', capitol: 'Bucharest', langue: 'Romanian' },
       { id: '5', country: 'China', capitol: 'Beijing', langue: 'Chinese' },
+      { id: '6', country: 'Mexico', capitol: 'Mexico City', langue: 'Spanish' }
     ]);
   });
   afterAll(() => {
