@@ -6,15 +6,16 @@ CREATE TABLE countries (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     country VARCHAR NOT NULL,
     capitol VARCHAR NOT NULL,
-    langue VARCHAR NOT NULL
+    langue VARCHAR NOT NULL,
+    continent VARCHAR NOT NULL
 );
 
 INSERT INTO 
-    countries (country, capitol, langue)
+    countries (country, capitol, langue, continent)
 VALUES 
-('United States', 'Washington DC', 'English'),
-('United Kingdom', 'London', 'English'),
-('India', 'New Dehli', 'Hindi'),
-('Romania', 'Bucharest', 'Romanian'),
-('China', 'Beijing', 'Chinese'),
-('Mexico', 'Mexico City', 'Spanish');
+('United States', 'Washington DC', 'English', 'North America'),
+('United Kingdom', 'London', 'English', 'North America'),
+('India', 'New Dehli', 'Hindi', 'Asia'),
+('Romania', 'Bucharest', 'Romanian', 'Europe'),
+('China', 'Beijing', 'Chinese', 'Asia'),
+('Mexico', 'Mexico City', 'Spanish', 'Europe');

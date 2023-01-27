@@ -12,12 +12,12 @@ describe('backend-express-template routes', () => {
     const resp = await request(app).get('/countries');
     expect(resp.status).toBe(200);
     expect(resp.body).toEqual([
-      { id: '1', country: 'United States', capitol: 'Washington DC', langue: 'English' },
-      { id: '2', country: 'United Kingdom', capitol: 'London', langue: 'English' },
-      { id: '3', country: 'India', capitol: 'New Dehli', langue: 'Hindi' },
-      { id: '4', country: 'Romania', capitol: 'Bucharest', langue: 'Romanian' },
-      { id: '5', country: 'China', capitol: 'Beijing', langue: 'Chinese' },
-      { id: '6', country: 'Mexico', capitol: 'Mexico City', langue: 'Spanish' }
+      { id: '1', country: 'United States', capitol: 'Washington DC', langue: 'English', continent: 'North America' },
+      { id: '2', country: 'United Kingdom', capitol: 'London', langue: 'English', continent: 'North America' },
+      { id: '3', country: 'India', capitol: 'New Dehli', langue: 'Hindi', continent: 'Asia' },
+      { id: '4', country: 'Romania', capitol: 'Bucharest', langue: 'Romania', continent: 'Europe' },
+      { id: '5', country: 'China', capitol: 'Beijing', langue: 'Chinese', continent: 'Asia' },
+      { id: '6', country: 'Mexico', capitol: 'Mexico City', langue: 'Spanish', continent: 'Europe' }
     ]);
   });
   afterAll(() => {
