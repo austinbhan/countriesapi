@@ -18,7 +18,4 @@ describe('backend-express-template routes', () => {
       { id: '6', country: 'Mexico', capitol: 'Mexico City', langue: 'Spanish', continent: 'Europe' }
     ]);
   });
-  afterAll(() => {
-    pool.end();
-  });
 });
