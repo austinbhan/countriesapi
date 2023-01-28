@@ -1,4 +1,3 @@
-const pool = require('../sql/pool');
 const { setupDb } = require('./utils');
 const request = require('supertest');
 const app = require('../lib/app');
