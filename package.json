@@ -1,7 +1,7 @@
 {
   "name": "backend-express-template",
   "version": "2.0.0",
-  "description": "",
+  "description": "The Golden Rule: 🦸 🦸‍♂️ Stop starting and start finishing. 🏁",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
@@ -9,6 +9,7 @@
     "test:watch": "npm run test -- --watch",
     "start": "env-cmd --silent node server.js",
     "start:watch": "env-cmd nodemon server.js",
+    "setup-heroku": "heroku run npm run setup-db",
     "db:reset": "npm run db:drop && npm run db:setup && npm run db:seed",
     "db:drop": "env-cmd --silent cross-var dropdb %PGDATABASE% && echo db dropped || echo db does not exist",
     "db:setup": "env-cmd --silent createdb && echo db created || echo db already exists",
@@ -33,13 +34,26 @@
     "jest": "^28.1.0",
     "nodemon": "^2.0.16",
     "prettier": "^2.6.2",
-    "supertest": "^6.2.3"
+    "supertest": "^6.3.3"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "cross-var": "^1.1.0",
+    "dotenv": "^16.0.3",
     "env-cmd": "^10.1.0",
     "express": "^4.18.1",
     "pg": "^8.7.3"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinbhan/countriesapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/austinbhan/countriesapi/issues"
+  },
+  "homepage": "https://github.com/austinbhan/countriesapi#readme"
 }
