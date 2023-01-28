@@ -1,10 +1,10 @@
 const pool = require('../sql/pool');
-// const setup = require('../lib/data/setup');
+const { setupDb } = require('./utils');
 const request = require('supertest');
 const app = require('../lib/app');
 
 describe('backend-express-template routes', () => {
-
+  beforeEach(setupDb);
   // GET ALL
   it('#GET /countries should return a list of countries', async () => {
     const resp = await request(app).get('/countries');
