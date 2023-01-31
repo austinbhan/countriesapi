@@ -7,15 +7,16 @@ CREATE TABLE countries (
     country VARCHAR NOT NULL,
     capitol VARCHAR NOT NULL,
     langue VARCHAR NOT NULL,
-    continent VARCHAR NOT NULL
+    continent VARCHAR NOT NULL,
+    population INT NOT NULL
 );
 
 INSERT INTO 
-    countries (country, capitol, langue, continent)
+    countries (country, capitol, langue, continent, population)
 VALUES 
-('United States', 'Washington DC', 'English', 'North America'),
-('United Kingdom', 'London', 'English', 'North America'),
-('India', 'New Dehli', 'Hindi', 'Asia'),
-('Romania', 'Bucharest', 'Romanian', 'Europe'),
-('China', 'Beijing', 'Chinese', 'Asia'),
-('Mexico', 'Mexico City', 'Spanish', 'Europe');
+('United States', 'Washington DC', 'English', 'North America', 335999183),
+('United Kingdom', 'London', 'English', 'North America', 67081234),
+('India', 'New Dehli', 'Hindi', 'Asia', 1414940553),
+('Romania', 'Bucharest', 'Romanian', 'Europe', 18907736),
+('China', 'Beijing', 'Chinese', 'Asia', 1453629085),
+('Mexico', 'Mexico City', 'Spanish', 'Europe', 132150971);
