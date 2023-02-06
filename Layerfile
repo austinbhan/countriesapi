@@ -11,8 +11,8 @@ RUN npm install -g http-server
 COPY . .
 SECRET ENV countries_secrets
 RUN echo $countries_secrets | base64 -d > ~/.env
-RUN echo 'hello' > hello.html
+RUN npm install 
 
-RUN BACKGROUND http-server -p 8000
-EXPOSE WEBSITE http://localhost:8000
+RUN BACKGROUND npm run start
+EXPOSE WEBSITE http://localhost:3000
 
