@@ -14,5 +14,5 @@ RUN echo $countries_secrets | base64 -d > ~/.env
 RUN npm install 
 
 RUN BACKGROUND npm run start
-EXPOSE WEBSITE http://localhost:3000
+EXPOSE WEBSITE http://localhost:7890
 
